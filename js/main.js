@@ -333,7 +333,11 @@ function nextLevel(){
 	if(level == 22){
 		level = 1;
 	}
+	//保存玩家数
+	var old_player_num = menu.playNum;
 	initObject();
+	menu.playNum = old_player_num;
+	
 	//只有一个玩家
 	if(menu.playNum == 1){
 		player2.lives = 0;
@@ -347,7 +351,11 @@ function preLevel(){
 	if(level == 0){
 		level = 21;
 	}
+	//保存玩家数
+	var old_player_num = menu.playNum;
 	initObject();
+	menu.playNum = old_player_num;
+
 	//只有一个玩家
 	if(menu.playNum == 1){
 		player2.lives = 0;
