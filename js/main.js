@@ -143,7 +143,7 @@ $(document).keydown(function(e){
 		if(e.keyCode == keyboard.SPACE && player1.lives > 0){
 			player1.shoot(BULLET_TYPE_PLAYER);
 		}else if(e.keyCode == keyboard.ENTER && player2.lives > 0){
-			player2.shoot(BULLET_TYPE_ENEMY);
+			player2.shoot(BULLET_TYPE_PLAYER);
 		}else if(e.keyCode == keyboard.N){
 			nextLevel();
 		}else if(e.keyCode == keyboard.P){
